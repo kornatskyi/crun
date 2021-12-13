@@ -16,7 +16,8 @@ then
 elif [[ -d "./src" ]]
 then
    makeBinDir
-        gcc -Wall -Werror -Wextra -pedantic -std=c11 -o "./bin/main" "./src/main.c"
+        gcc -pedantic -std=c11 -o "./bin/main" "./src/main.c"
+        # gcc -Wall -Werror -Wextra -pedantic -std=c11 -o "./bin/main" "./src/main.c"
         ./bin/main
 elif [[ ! -d "./src" ]]
 then
